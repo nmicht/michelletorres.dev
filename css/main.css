@@ -5,7 +5,13 @@
 }
 body {
   font-family: 'Open sans', sans-serif;
+  position: relative;
+  min-height: 100vh;
 }
+.container {
+  padding-bottom: 3.5rem;    /* Footer height */
+}
+
 a,
 .bullet {
   color: #8c408b;
