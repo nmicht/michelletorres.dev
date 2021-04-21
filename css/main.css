@@ -6,81 +6,82 @@
 body {
   font-family: 'Open sans', sans-serif;
 }
-a {
-  color: #b978b9;
+a,
+.bullet {
+  color: #8c408b;
 }
-table {
-  border-spacing: 1.5em;
-}
-
-
 .fixed {
   max-width: 1068px;
   width: 100%;
-}
-.align-right {
-  text-align: right;
-}
-
-.top-menu {
-  background-color: #f9f9f9;
-  font-size: 0.9em;
-  line-height: 2;
-  color: #2f2f2f;
-  height: 1.75rem;
-}
-.top-menu .fixed {
   margin: 0 auto;
 }
-.top-menu .social-icons a:hover{
-  color: #b978b9;
-}
 
-
-header {
+.hero {
   font-family: 'Montserrat', sans-serif;
   background: #b978b9;
   color: #FFF;
   font-weight: bolder;
   text-align: center;
+  max-width: 1068px;
+  width: 100%;
   margin: 1rem auto;
   line-height: 1.2;
   font-size: 3em;
   padding: 0.2em;
 }
-header h1 {
+.hero h1 {
   text-transform: lowercase;
 }
-header p {
+.hero p {
   font-size: .35em;
   margin: 2em 0;
 }
-header small {
+.hero small {
   display: block;
   font-size: .4em;
 }
-header .social-icons a {
+.hero .social-icons a {
   font-size: .4em;
   color: purple;
 }
-header .social-icons li {
+.hero .social-icons li {
   margin: 0;
 }
 
-.bullet {
-  color: purple;
+
+.nav {
+  background-color: #f9f9f9;
+}
+.nav li{
+  margin: 0 0.8em;
+}
+.nav.small {
+  font-size: 0.9em;
+  line-height: 2;
+  color: #2f2f2f;
+  height: 1.75rem;
+  text-align: right;
+}
+.nav.big {
+  text-align: center;
+  padding: 1rem 0;
 }
 
 .social-icons li {
   display: inline-block;,
   list-style-type: none;
-  margin: 0 0.8em;
 }
 .social-icons a {
   text-decoration: none;
 }
-.social-icons.top a {
-  color: #2f2f2f;
+.social-icons a:hover{
+  color: black;
+}
+.social-icons.nav.small li {
+  margin: 0 0.8em;
+}
+.social-icons.nav.big li {
+  margin: 2em;
 }
 
 main {
@@ -97,22 +98,20 @@ article p {
 }
 
 footer {
-  text-align: center;
-  background-color: #f9f9f9;
-  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem;
 }
-footer li {
-    margin: 2em;
-}
-footer .social-icons a:hover{
-  color: purple;
-}
-
 
 
 @media only screen and (max-width: 768px) {
-  .title-text {
+  .hero {
     font-size: 8.5vw;
     overflow: hidden;
+  }
+  .hero .social-icons a,
+  .hero p {
+    font-size: 0.5em;
   }
 }
