@@ -21,7 +21,9 @@ a,
   width: 100%;
   margin: 0 auto;
 }
-
+.visually-hidden {
+  display: none;
+}
 .hero {
   font-family: 'Montserrat', sans-serif;
   background: #b978b9;
@@ -46,48 +48,53 @@ a,
   display: block;
   font-size: .4em;
 }
+
 .hero .social-icons a {
   font-size: .4em;
   color: purple;
 }
 .hero .social-icons li {
-  margin: 0;
+  margin: 0 0.5rem;
 }
 
 
 .nav {
   background-color: #f9f9f9;
 }
-.nav li{
-  margin: 0 0.8em;
-}
 .nav.small {
   font-size: 0.9em;
   line-height: 2;
   color: #2f2f2f;
   height: 1.75rem;
-  text-align: right;
 }
 .nav.big {
-  text-align: center;
   padding: 1rem 0;
 }
+.nav.small .social-icons {
+    justify-content: right;
+}
+.nav.big .social-icons {
+    justify-content: center;
+}
+.hero .social-icons {
+    justify-content: center;
+}
 
-.social-icons li {
-  display: inline-block;,
+
+.social-icons {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.social-icons li{
+  margin: 0 0.8em;
 }
 .social-icons a {
   text-decoration: none;
 }
 .social-icons a:hover{
   color: black;
-}
-.social-icons.nav.small li {
-  margin: 0 0.8em;
-}
-.social-icons.nav.big li {
-  margin: 2em;
 }
 
 main {
