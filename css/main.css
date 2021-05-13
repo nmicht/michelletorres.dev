@@ -71,7 +71,7 @@ a {
   padding: 1rem 0;
 }
 .nav.small .social-icons {
-    justify-content: right;
+    justify-content: flex-end;
 }
 .nav.big .social-icons {
     justify-content: center;
