@@ -12,18 +12,18 @@ body {
   padding-bottom: 3.5rem;    /* Footer height */
 }
 
-a,
-.bullet {
+a {
   color: #8c408b;
+}
+.bullet {
+  color: #3B1C3B;
 }
 .fixed {
   max-width: 1068px;
   width: 100%;
   margin: 0 auto;
 }
-.visually-hidden {
-  display: none;
-}
+
 .hero {
   font-family: 'Montserrat', sans-serif;
   background: #b978b9;
@@ -41,7 +41,7 @@ a,
   text-transform: lowercase;
 }
 .hero p {
-  font-size: .35em;
+  font-size: .4em;
   margin: 2em 0;
 }
 .hero small {
@@ -51,7 +51,7 @@ a,
 
 .hero .social-icons a {
   font-size: .4em;
-  color: purple;
+  color: #3B1C3B;
 }
 .hero .social-icons li {
   margin: 0 0.5rem;
@@ -75,6 +75,7 @@ a,
 }
 .nav.big .social-icons {
     justify-content: center;
+    flex-wrap: wrap;
 }
 .hero .social-icons {
     justify-content: center;
@@ -120,7 +121,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
   .hero {
-    font-size: 8.5vw;
+    font-size: 11.5vw;
     overflow: hidden;
   }
   .hero .social-icons a,
