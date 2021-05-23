@@ -1,2 +1,3 @@
 # michelletorres.dev
-My personal website, basically simple and horrible html and css without good patterns or practices.
+My personal website at [michelletorres.dev](https://michelletorres.dev)  
+This is pretty much simple and horrible html and css without good patterns or practices.
